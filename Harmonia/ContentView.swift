@@ -17,11 +17,21 @@ struct ContentView: View {
                 Text("Harmonia")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                   
+                
+                Text("Find your inner rhythm, create harmony with Harmonia")
+                    .font(.title2)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                     .padding()
                 
                 Spacer()
                 
                 TextField("Enter your name", text: $name)
+                    .padding()
+                    .border(/*@START_MENU_TOKEN@*/Color.pink/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .cornerRadius(10)
                     .padding()
                 
                 Button(action: {
@@ -32,11 +42,9 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
-                        .cornerRadius(8)
+                        .background(Color.orange)
+                        .cornerRadius(10)
                 }
-                
-                Spacer()
             }
             .padding()
             .background(
@@ -49,6 +57,14 @@ struct ContentView: View {
                 )
                 .hidden()
             )
+            .background(
+                            Image("sunset") 
+                                .resizable()
+                                .scaledToFill()
+                                .edgesIgnoringSafeArea(.all)
+            )
+            
+            
         }
     }
 }
