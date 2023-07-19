@@ -10,23 +10,72 @@
 import SwiftUI
 
 struct HomeView: View {
-    var name: String
+    @State var name: String
     
     var body: some View {
-        VStack {
-            Text("Welcome, \(name)!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            Spacer()
-            
-            Text("This is the HomeView.")
-            
-            Spacer()
+        NavigationView {
+            VStack {
+                Text("Welcome, \(name)!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                NavigationLink(destination: JournalView()) {
+                    Text("Journal")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                
+                NavigationLink(destination: MindfulRemindersView()) {
+                    Text("Mindful Reminders")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                
+                NavigationLink(destination: MeditationView()) {
+                    Text("Meditation")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                
+                NavigationLink(destination: LogView()) {
+                    Text("Log")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                
+                NavigationLink(destination: ResourcesView()) {
+                    Text("Resources")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                
+                Spacer()
+            }
+            .padding()
+            .navigationBarHidden(true)
         }
-        .padding()
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
     }
 }
 
