@@ -11,6 +11,13 @@
 		84C47FBD2A65C12600731FC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C47FBC2A65C12600731FC4 /* ContentView.swift */; };
 		84C47FBF2A65C12F00731FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C47FBE2A65C12F00731FC4 /* Assets.xcassets */; };
 		84C47FC22A65C12F00731FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C47FC12A65C12F00731FC4 /* Preview Assets.xcassets */; };
+		A2EE4CBF2A682B4500653B0B /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CBE2A682B4500653B0B /* StartView.swift */; };
+		A2EE4CC12A682B7400653B0B /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CC02A682B7400653B0B /* ResourcesView.swift */; };
+		A2EE4CC32A682B9100653B0B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CC22A682B9100653B0B /* HomeView.swift */; };
+		A2EE4CC52A682BB300653B0B /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CC42A682BB300653B0B /* JournalView.swift */; };
+		A2EE4CC72A682BF300653B0B /* MindfulRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CC62A682BF300653B0B /* MindfulRemindersView.swift */; };
+		A2EE4CC92A682C5E00653B0B /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CC82A682C5E00653B0B /* MeditationView.swift */; };
+		A2EE4CCB2A682CAD00653B0B /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE4CCA2A682CAD00653B0B /* LogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		84C47FBE2A65C12F00731FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C47FC12A65C12F00731FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84C47FC32A65C12F00731FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EE4CBE2A682B4500653B0B /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		A2EE4CC02A682B7400653B0B /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		A2EE4CC22A682B9100653B0B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A2EE4CC42A682BB300653B0B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		A2EE4CC62A682BF300653B0B /* MindfulRemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulRemindersView.swift; sourceTree = "<group>"; };
+		A2EE4CC82A682C5E00653B0B /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		A2EE4CCA2A682CAD00653B0B /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 				84C47FBE2A65C12F00731FC4 /* Assets.xcassets */,
 				84C47FC32A65C12F00731FC4 /* Info.plist */,
 				84C47FC02A65C12F00731FC4 /* Preview Content */,
+				A2EE4CBE2A682B4500653B0B /* StartView.swift */,
+				A2EE4CC02A682B7400653B0B /* ResourcesView.swift */,
+				A2EE4CC22A682B9100653B0B /* HomeView.swift */,
+				A2EE4CC42A682BB300653B0B /* JournalView.swift */,
+				A2EE4CC62A682BF300653B0B /* MindfulRemindersView.swift */,
+				A2EE4CC82A682C5E00653B0B /* MeditationView.swift */,
+				A2EE4CCA2A682CAD00653B0B /* LogView.swift */,
 			);
 			path = Harmonia;
 			sourceTree = "<group>";
@@ -138,7 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EE4CC92A682C5E00653B0B /* MeditationView.swift in Sources */,
+				A2EE4CC52A682BB300653B0B /* JournalView.swift in Sources */,
+				A2EE4CC12A682B7400653B0B /* ResourcesView.swift in Sources */,
+				A2EE4CBF2A682B4500653B0B /* StartView.swift in Sources */,
 				84C47FBD2A65C12600731FC4 /* ContentView.swift in Sources */,
+				A2EE4CC72A682BF300653B0B /* MindfulRemindersView.swift in Sources */,
+				A2EE4CC32A682B9100653B0B /* HomeView.swift in Sources */,
+				A2EE4CCB2A682CAD00653B0B /* LogView.swift in Sources */,
 				84C47FBB2A65C12500731FC4 /* HarmoniaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
