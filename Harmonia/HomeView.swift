@@ -3,7 +3,9 @@
 //  Harmonia
 //
 //  Created by Kayla Ann Newton on 7/19/23.
-//
+//•••••••••••••••••••••••••••••••••••••••••
+
+//HomeView will lead to JournalView, Recourcesview, MindfulReminderView, MeditationView, & LogView
 
 import SwiftUI
 

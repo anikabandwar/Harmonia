@@ -3,13 +3,37 @@
 //  Harmonia
 //
 //  Created by Kayla Ann Newton on 7/19/23.
-//
+//••••••••••••••••••••••••••••••••••••••••••
+
+
+//StarView will lead to home view
 
 import SwiftUI
 
 struct StartView: View {
+    @State private var name: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Welcome!")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            Spacer()
+            TextField("Enter your name", text: $name)
+                            .padding()
+                        
+            Button(action: {
+                greetUser()
+                }) {
+                Text("Submit")
+            }
+            Spacer()
+        }.padding()
+    }
+    private func greetUser() {
+            if !name.isEmpty {
+                let greeting = "Hello, \(name)!"
+                print(greeting)
+        }
     }
 }
 
