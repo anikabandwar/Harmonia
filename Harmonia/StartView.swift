@@ -12,23 +12,34 @@ import SwiftUI
 
 struct StartView: View {
     @State private var name: String = ""
+    @State private var isSubmitted: Bool = false
     var body: some View {
-        VStack {
-            Text("Welcome!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            Spacer()
-            TextField("Enter your name", text: $name)
-                            .padding()
-                        
-            Button(action: {
-                greetUser()
-                }) {
-                Text("Submit")
-            }
-            Spacer()
-        }.padding()
-    }
+        NavigationView{
+            VStack {
+                Text("Welcome!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Spacer()
+                TextField("Enter your name", text: $name)
+                    .padding()
+                
+                NavigationLink(
+                    destination: HomeView(name: name),
+                    isActive: $isSubmitted,
+                    label: {
+                        Text("Submit")
+                        })
+                        .isDetailLink(false)
+                    }
+                }
+                Button(action: {
+                    greetUser()
+                    }) {
+                    Text("Submit")
+                }
+                Spacer()
+            }.padding()
+        }
     private func greetUser() {
             if !name.isEmpty {
                 let greeting = "Hello, \(name)!"
