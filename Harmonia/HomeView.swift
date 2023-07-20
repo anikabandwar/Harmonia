@@ -27,7 +27,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.orange)
                         .cornerRadius(8)
                 }
                 
@@ -37,7 +37,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.orange)
                         .cornerRadius(8)
                 }
                 
@@ -47,7 +47,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.orange)
                         .cornerRadius(8)
                 }
                 
@@ -57,7 +57,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.orange)
                         .cornerRadius(8)
                 }
                 
@@ -67,7 +67,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.orange)
                         .cornerRadius(8)
                 }
                 

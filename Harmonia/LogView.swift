@@ -44,13 +44,13 @@ struct LogView: View {
                     .background(Color.blue)
                     .cornerRadius(8)
             }
-            List(entries) { entry in
-                            HStack {
-                                Text("\(entry.date, formatter: DateFormatter.date)")
-                                Spacer()
-                                Text(entry.emoji)
-                            }
-                        }
+                List(entries) { entry in
+                    HStack {
+                        Text("\(entry.date, formatter: DateFormatter.date)")
+                        Spacer()
+                        Text(entry.emoji)
+                }
+            }
 
             .padding()
                 
