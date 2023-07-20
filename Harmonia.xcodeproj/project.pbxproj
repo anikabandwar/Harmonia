@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848192D02A69A3C800B7ABB5 /* Mali-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C42A69A3C600B7ABB5 /* Mali-Italic.ttf */; };
+		848192D12A69A3C800B7ABB5 /* Mali-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C52A69A3C600B7ABB5 /* Mali-BoldItalic.ttf */; };
+		848192D22A69A3C800B7ABB5 /* Mali-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */; };
+		848192D32A69A3C800B7ABB5 /* Mali-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C72A69A3C700B7ABB5 /* Mali-LightItalic.ttf */; };
+		848192D42A69A3C800B7ABB5 /* Mali-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C82A69A3C700B7ABB5 /* Mali-Regular.ttf */; };
+		848192D52A69A3C800B7ABB5 /* Mali-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192C92A69A3C700B7ABB5 /* Mali-SemiBoldItalic.ttf */; };
+		848192D62A69A3C800B7ABB5 /* Mali-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CA2A69A3C700B7ABB5 /* Mali-ExtraLightItalic.ttf */; };
+		848192D72A69A3C800B7ABB5 /* Mali-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CB2A69A3C700B7ABB5 /* Mali-Light.ttf */; };
+		848192D82A69A3C800B7ABB5 /* Mali-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CC2A69A3C700B7ABB5 /* Mali-Medium.ttf */; };
+		848192D92A69A3C800B7ABB5 /* Mali-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CD2A69A3C700B7ABB5 /* Mali-MediumItalic.ttf */; };
+		848192DA2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CE2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf */; };
+		848192DB2A69A3C800B7ABB5 /* Mali-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848192CF2A69A3C800B7ABB5 /* Mali-SemiBold.ttf */; };
 		84C47FBB2A65C12500731FC4 /* HarmoniaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C47FBA2A65C12500731FC4 /* HarmoniaApp.swift */; };
 		84C47FBD2A65C12600731FC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C47FBC2A65C12600731FC4 /* ContentView.swift */; };
 		84C47FBF2A65C12F00731FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C47FBE2A65C12F00731FC4 /* Assets.xcassets */; };
@@ -20,6 +32,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848192C42A69A3C600B7ABB5 /* Mali-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Italic.ttf"; path = "../../../../Downloads/Mali/Mali-Italic.ttf"; sourceTree = "<group>"; };
+		848192C52A69A3C600B7ABB5 /* Mali-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-BoldItalic.ttf"; path = "../../../../Downloads/Mali/Mali-BoldItalic.ttf"; sourceTree = "<group>"; };
+		848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Bold.ttf"; path = "../../../../Downloads/Mali/Mali-Bold.ttf"; sourceTree = "<group>"; };
+		848192C72A69A3C700B7ABB5 /* Mali-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-LightItalic.ttf"; path = "../../../../Downloads/Mali/Mali-LightItalic.ttf"; sourceTree = "<group>"; };
+		848192C82A69A3C700B7ABB5 /* Mali-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Regular.ttf"; path = "../../../../Downloads/Mali/Mali-Regular.ttf"; sourceTree = "<group>"; };
+		848192C92A69A3C700B7ABB5 /* Mali-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-SemiBoldItalic.ttf"; path = "../../../../Downloads/Mali/Mali-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		848192CA2A69A3C700B7ABB5 /* Mali-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-ExtraLightItalic.ttf"; path = "../../../../Downloads/Mali/Mali-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		848192CB2A69A3C700B7ABB5 /* Mali-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Light.ttf"; path = "../../../../Downloads/Mali/Mali-Light.ttf"; sourceTree = "<group>"; };
+		848192CC2A69A3C700B7ABB5 /* Mali-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Medium.ttf"; path = "../../../../Downloads/Mali/Mali-Medium.ttf"; sourceTree = "<group>"; };
+		848192CD2A69A3C700B7ABB5 /* Mali-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-MediumItalic.ttf"; path = "../../../../Downloads/Mali/Mali-MediumItalic.ttf"; sourceTree = "<group>"; };
+		848192CE2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-ExtraLight.ttf"; path = "../../../../Downloads/Mali/Mali-ExtraLight.ttf"; sourceTree = "<group>"; };
+		848192CF2A69A3C800B7ABB5 /* Mali-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-SemiBold.ttf"; path = "../../../../Downloads/Mali/Mali-SemiBold.ttf"; sourceTree = "<group>"; };
 		84C47FB72A65C12500731FC4 /* Harmonia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmonia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C47FBA2A65C12500731FC4 /* HarmoniaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmoniaApp.swift; sourceTree = "<group>"; };
 		84C47FBC2A65C12600731FC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +94,18 @@
 				84C47FC32A65C12F00731FC4 /* Info.plist */,
 				84C47FC02A65C12F00731FC4 /* Preview Content */,
 				A2EE4CC02A682B7400653B0B /* ResourcesView.swift */,
+				848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */,
+				848192C52A69A3C600B7ABB5 /* Mali-BoldItalic.ttf */,
+				848192CE2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf */,
+				848192CA2A69A3C700B7ABB5 /* Mali-ExtraLightItalic.ttf */,
+				848192C42A69A3C600B7ABB5 /* Mali-Italic.ttf */,
+				848192CB2A69A3C700B7ABB5 /* Mali-Light.ttf */,
+				848192C72A69A3C700B7ABB5 /* Mali-LightItalic.ttf */,
+				848192CC2A69A3C700B7ABB5 /* Mali-Medium.ttf */,
+				848192CD2A69A3C700B7ABB5 /* Mali-MediumItalic.ttf */,
+				848192C82A69A3C700B7ABB5 /* Mali-Regular.ttf */,
+				848192CF2A69A3C800B7ABB5 /* Mali-SemiBold.ttf */,
+				848192C92A69A3C700B7ABB5 /* Mali-SemiBoldItalic.ttf */,
 				A2EE4CC22A682B9100653B0B /* HomeView.swift */,
 				A2EE4CC42A682BB300653B0B /* JournalView.swift */,
 				A2EE4CC62A682BF300653B0B /* MindfulRemindersView.swift */,
@@ -144,8 +180,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848192D72A69A3C800B7ABB5 /* Mali-Light.ttf in Resources */,
+				848192D52A69A3C800B7ABB5 /* Mali-SemiBoldItalic.ttf in Resources */,
+				848192D32A69A3C800B7ABB5 /* Mali-LightItalic.ttf in Resources */,
 				84C47FC22A65C12F00731FC4 /* Preview Assets.xcassets in Resources */,
+				848192D92A69A3C800B7ABB5 /* Mali-MediumItalic.ttf in Resources */,
+				848192D22A69A3C800B7ABB5 /* Mali-Bold.ttf in Resources */,
+				848192DB2A69A3C800B7ABB5 /* Mali-SemiBold.ttf in Resources */,
+				848192D82A69A3C800B7ABB5 /* Mali-Medium.ttf in Resources */,
+				848192D02A69A3C800B7ABB5 /* Mali-Italic.ttf in Resources */,
+				848192DA2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf in Resources */,
+				848192D12A69A3C800B7ABB5 /* Mali-BoldItalic.ttf in Resources */,
+				848192D62A69A3C800B7ABB5 /* Mali-ExtraLightItalic.ttf in Resources */,
 				84C47FBF2A65C12F00731FC4 /* Assets.xcassets in Resources */,
+				848192D42A69A3C800B7ABB5 /* Mali-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

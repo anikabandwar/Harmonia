@@ -12,22 +12,35 @@ struct ContentView: View {
     @State private var isSubmitted: Bool = false
     
     var body: some View {
+        ZStack {
+            Color.orange
+                .ignoresSafeArea()
         NavigationView {
+            ZStack {
+                Color.orange
+                    .ignoresSafeArea()
             VStack {
                 Text("Harmonia")
-                    .font(.largeTitle)
+                    .font(.custom("Mali-Bold", size: 56))
                     .fontWeight(.black)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                    
                 
+                
                 Text("Find your inner rhythm, create harmony with Harmonia")
-                    .font(.title2)
+                    .font(.custom("Mali-Medium", size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .padding()
                 
-                Spacer()
+                
+                Image("sunset")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .padding()
+                    .cornerRadius(20)
                 
                 TextField("Enter your name", text: $name)
                     .padding()
@@ -43,9 +56,18 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.orange)
+                        .background(Color.pink)
                         .cornerRadius(10)
                 }
+                
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                
+            }
+            }
             }
             .padding()
             .background(
@@ -58,15 +80,7 @@ struct ContentView: View {
                 )
                 .hidden()
             )
-            .background(
-                            Image("sunset") 
-                                .resizable()
-                                .scaledToFill()
-                                .edgesIgnoringSafeArea(.all)
-                                .padding()
-                                .cornerRadius(20)
-                            
-            )
+
             
             .padding()
             .cornerRadius(20)

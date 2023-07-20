@@ -9,7 +9,37 @@ import SwiftUI
 
 struct MindfulRemindersView: View {
     var body: some View {
-        Text("This is the mindful reminders view!")
+        ZStack {
+            Color.orange
+                .ignoresSafeArea()
+        VStack {
+            Text("Mindful Reminders 🤍")
+                .font(.custom("Mali-Bold", size: 32))
+                .foregroundColor(Color.white)
+                
+            Spacer()
+            
+            HStack{
+            Text("\nYou are loved.\n")
+                .font(.custom("Mali-Bold", size: 22))
+                .foregroundColor(Color.white)
+                .multilineTextAlignment(.center)
+                .border(Color.white, width: 2)
+                Spacer()
+                
+            Text("\nYou are enough.\n")
+                    .font(.custom("Mali-Bold", size: 22))
+                    .foregroundColor(Color.white)
+                    .border(Color.white, width: 2)
+            } .padding()
+                
+            
+            
+            Spacer()
+            
+        }.padding()
+        
+        }
     }
 }
 

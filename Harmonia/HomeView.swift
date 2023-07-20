@@ -11,6 +11,9 @@ import SwiftUI
 
 struct HomeView: View {
     @State var name: String
+     @State var topic = ""
+     @State var entry = ""
+     
     
     var body: some View {
         NavigationView {
@@ -21,7 +24,7 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: JournalView()) {
+                NavigationLink(destination: JournalView(topic: $topic, entry: $entry)) {
                     Text("Journal")
                         .font(.title)
                         .fontWeight(.bold)
