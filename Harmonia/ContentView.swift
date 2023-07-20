@@ -16,7 +16,8 @@ struct ContentView: View {
             VStack {
                 Text("Harmonia")
                     .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .fontWeight(.black)
+                    .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                    
                 
@@ -62,10 +63,15 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .edgesIgnoringSafeArea(.all)
+                                .padding()
+                                .cornerRadius(20)
+                            
             )
             
-            
+            .padding()
+            .cornerRadius(20)
         }
+        
     }
 }
 
