@@ -2,27 +2,21 @@
 //  JournalView.swift
 //  Harmonia
 //
-//  Created by Kayla Ann Newton on 7/19/23.
+//  Created by Anika Bandwar on 7/19/23.
 //
 
 import SwiftUI
 
-struct JournalEntry: Identifiable {
-    let id = UUID()
-    var topic: String
-    var entry: String
-}
-
 struct JournalView: View {
     @Binding var topic: String
     @Binding var entry: String
-    @State private var entries: [JournalEntry] = []
     
     var body: some View {
         VStack {
             Text("Rant Journal")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .padding(.top)
             
             Form {
                 Section(header: Text("Topic")) {
@@ -38,25 +32,28 @@ struct JournalView: View {
             }
             .padding()
             
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            
-            Button(action: //screen reset
-            ) {
+            Button(action: {
+                releaseEntry()
+                
+            }) {
                 Text("Release")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(8)
+                
             }
             
-            }
-            .padding()
         }
+        .padding()
     }
+    
+    private func releaseEntry() {
+        topic = ""
+        entry = ""
+    }
+}
 
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {

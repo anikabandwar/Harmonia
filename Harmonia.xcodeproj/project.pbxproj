@@ -32,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8416F6EF2A69DBA1003CBDE5 /* Mali-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-Bold.ttf"; sourceTree = "<group>"; };
+		8416F6F02A69DBAE003CBDE5 /* Mali-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8416F6F12A69DBB1003CBDE5 /* Mali-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-LightItalic.ttf"; sourceTree = "<group>"; };
+		8416F6F22A69DBB3003CBDE5 /* Mali-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8416F6F32A69DBB7003CBDE5 /* Mali-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-BoldItalic.ttf"; path = "../../../../../../Downloads/Mali/Mali-BoldItalic.ttf"; sourceTree = "<group>"; };
 		848192C42A69A3C600B7ABB5 /* Mali-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Italic.ttf"; path = "../../../../Downloads/Mali/Mali-Italic.ttf"; sourceTree = "<group>"; };
 		848192C52A69A3C600B7ABB5 /* Mali-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-BoldItalic.ttf"; path = "../../../../Downloads/Mali/Mali-BoldItalic.ttf"; sourceTree = "<group>"; };
 		848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mali-Bold.ttf"; path = "../../../../Downloads/Mali/Mali-Bold.ttf"; sourceTree = "<group>"; };
@@ -69,6 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8416F6EE2A69DB8D003CBDE5 /* Mali Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8416F6F02A69DBAE003CBDE5 /* Mali-SemiBoldItalic.ttf */,
+				8416F6F22A69DBB3003CBDE5 /* Mali-BoldItalic.ttf */,
+				8416F6F32A69DBB7003CBDE5 /* Mali-BoldItalic.ttf */,
+				8416F6F12A69DBB1003CBDE5 /* Mali-LightItalic.ttf */,
+				8416F6EF2A69DBA1003CBDE5 /* Mali-Bold.ttf */,
+			);
+			path = "Mali Fonts";
+			sourceTree = "<group>";
+		};
 		84C47FAE2A65C12500731FC4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +111,9 @@
 				84C47FC32A65C12F00731FC4 /* Info.plist */,
 				84C47FC02A65C12F00731FC4 /* Preview Content */,
 				A2EE4CC02A682B7400653B0B /* ResourcesView.swift */,
-				848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */,
 				848192C52A69A3C600B7ABB5 /* Mali-BoldItalic.ttf */,
+				848192C62A69A3C700B7ABB5 /* Mali-Bold.ttf */,
+				848192C92A69A3C700B7ABB5 /* Mali-SemiBoldItalic.ttf */,
 				848192CE2A69A3C800B7ABB5 /* Mali-ExtraLight.ttf */,
 				848192CA2A69A3C700B7ABB5 /* Mali-ExtraLightItalic.ttf */,
 				848192C42A69A3C600B7ABB5 /* Mali-Italic.ttf */,
@@ -105,7 +123,6 @@
 				848192CD2A69A3C700B7ABB5 /* Mali-MediumItalic.ttf */,
 				848192C82A69A3C700B7ABB5 /* Mali-Regular.ttf */,
 				848192CF2A69A3C800B7ABB5 /* Mali-SemiBold.ttf */,
-				848192C92A69A3C700B7ABB5 /* Mali-SemiBoldItalic.ttf */,
 				A2EE4CC22A682B9100653B0B /* HomeView.swift */,
 				A2EE4CC42A682BB300653B0B /* JournalView.swift */,
 				A2EE4CC62A682BF300653B0B /* MindfulRemindersView.swift */,
@@ -118,6 +135,7 @@
 		84C47FC02A65C12F00731FC4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8416F6EE2A69DB8D003CBDE5 /* Mali Fonts */,
 				84C47FC12A65C12F00731FC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
