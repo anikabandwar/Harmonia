@@ -10,26 +10,30 @@ import SwiftUI
 struct MeditationView: View {
     var body: some View {
         ZStack {
-            Color.orange
+            Color("yellow")
                 .ignoresSafeArea()
                 
             VStack {
                 Text("Meditation")
-                    .font(.custom("Mali-Bold", size: 32))
-                    .foregroundColor(.white)
+                    .font(.custom("Mali-Bold", size: 42))
+                    .foregroundColor(Color("darkOrange"))
 
-                Spacer()
+                Image("meditation")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 250, height: 250)
+               
 
                 Button(action: {
                     openYouTubeLink(urlString: "https://www.youtube.com/watch?v=bF_1ZiFta-E")
                 }) {
                     Text("Square Breathing")
-                        .font(.title2)
+                        .font(.custom("Mali-Bold", size: 23))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("darkOrange"))
                         .cornerRadius(8)
                 }
 
@@ -37,12 +41,12 @@ struct MeditationView: View {
                     openYouTubeLink(urlString: "https://www.youtube.com/watch?v=pU80BEm43JM")
                 }) {
                     Text("Guided Meditation - Anxiety")
-                        .font(.title2)
+                        .font(.custom("Mali-Bold", size: 23))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("darkOrange"))
                         .cornerRadius(8)
                 }
 
@@ -50,12 +54,12 @@ struct MeditationView: View {
                     openYouTubeLink(urlString: "https://www.youtube.com/watch?v=H2jTDhQhcbk")
                 }) {
                     Text("Mind Gut Meditation")
-                        .font(.title2)
+                        .font(.custom("Mali-Bold", size: 23))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("darkOrange"))
                         .cornerRadius(8)
                 }
                 
@@ -63,12 +67,12 @@ struct MeditationView: View {
                     openYouTubeLink(urlString: "https://www.youtube.com/watch?v=30VMIEmA114")
                 }) {
                     Text("5-4-3-2-1 Method")
-                        .font(.title2)
+                        .font(.custom("Mali-Bold", size: 23))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("darkOrange"))
                         .cornerRadius(8)
                 }
                 
@@ -76,12 +80,12 @@ struct MeditationView: View {
                     openYouTubeLink(urlString: "https://www.youtube.com/watch?v=2FGR-OspxsU")
                 }) {
                     Text("10 Min. Healing Meditation")
-                        .font(.title2)
+                        .font(.custom("Mali-Bold", size: 23))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("darkOrange"))
                         .cornerRadius(8)
                 }
 

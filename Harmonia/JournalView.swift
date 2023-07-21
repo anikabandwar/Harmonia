@@ -12,41 +12,55 @@ struct JournalView: View {
     @Binding var entry: String
     
     var body: some View {
-        VStack {
-            Text("Rant Journal")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.top)
-            
-            Form {
-                Section(header: Text("Topic")) {
-                    TextField("Enter topic", text: $topic)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+            VStack {
+                Spacer()
+                HStack {
+                    Text("Rant Journal")
+                        .font(.custom("Mali-Regular", size: 42))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("darkOrange"))
+                        .padding(.top)
+                        .padding(.top)
+                    Image("journal")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 150, height: 150)
+                        .padding(.top)
+                        .padding(.top)
                 }
                 
-                Section(header: Text("Entry")) {
-                    TextEditor(text: $entry)
-                        .frame(height: 500)
-                        .border(Color.gray, width: 1)
+                Form {
+                    Section(header: Text("Topic")) {
+                        TextField("Enter topic", text: $topic)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
+                    
+                    Section(header: Text("Entry")) {
+                        TextEditor(text: $entry)
+                            .frame(height: 400)
+                    }
                 }
-            }
-            .padding()
-            
-            Button(action: {
-                releaseEntry()
+                .padding()
                 
-            }) {
-                Text("Release")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(8)
+                Button(action: {
+                    releaseEntry()
+                    
+                }) {
+                    Text("Release")
+                        .font(.custom("Mali-Regular", size: 28))
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color("darkOrange"))
+                        .cornerRadius(8)
+                    
+                }
                 
             }
-            
-        }
+        
+        
         .padding()
+            .background(Color("pink"))
+            .ignoresSafeArea()
     }
     
     private func releaseEntry() {

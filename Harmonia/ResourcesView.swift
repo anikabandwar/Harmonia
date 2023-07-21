@@ -10,13 +10,13 @@ import SwiftUI
 struct ResourcesView: View {
     var body: some View {
         ZStack {
-            Color.orange
+            Color("yellow")
                 .ignoresSafeArea()
                 
             VStack {
                 Text("Resources")
-                    .font(.custom("Mali-Bold", size: 32))
-                    .foregroundColor(.white)
+                    .font(.custom("Mali-Bold", size: 42))
+                    .foregroundColor(Color("darkOrange"))
                     .padding()
 
                 Spacer()
@@ -42,17 +42,18 @@ struct ResourceText: View {
     var body: some View {
         VStack {
             Text(title)
-                .font(.title2)
+                .font(.custom("Mali-Bold", size: 23))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
             Text(phoneNumber)
                 .font(.body)
+                .fontWeight(.bold)
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity)
         .padding()
-        .background(Color.blue)
+        .background(Color("darkOrange"))
         .cornerRadius(8)
         .padding(.vertical, 8)
     }

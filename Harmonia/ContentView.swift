@@ -14,22 +14,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.orange
+                Color("orange")
                     .ignoresSafeArea()
                 VStack {
                     Text("Harmonia")
                         .font(.custom("Mali-Bold", size: 56))
                         .fontWeight(.black)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color("darkOrange"))
                         .multilineTextAlignment(.center)
 
                     Text("Find your inner rhythm, create harmony with Harmonia")
-                        .font(.custom("Mali-Medium", size: 20))
+                        .font(.custom("Mali-Regular", size: 22))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding()
 
-                    Image("sunset")
+                    Image("dog")
                         .resizable()
                         .scaledToFill()
                         .edgesIgnoringSafeArea(.all)
@@ -38,7 +38,7 @@ struct ContentView: View {
 
                     TextField("Enter your name", text: $name)
                         .padding()
-                        .border(Color.pink, width: 1)
+                        .border(Color("darkOrange"), width: 1)
                         .cornerRadius(10)
                         .padding()
 
@@ -50,13 +50,13 @@ struct ContentView: View {
                                 isSubmitted = true
                             }) {
                                 Text("Start")
-                                    .font(.title)
+                                    .font(.custom("Mali-Regular", size: 30))
                                     .fontWeight(.bold)
                                     .foregroundColor(.white)
                                     .padding()
-                                    .background(Color.pink)
+                                    .background(Color("darkOrange"))
                                     .cornerRadius(10)
-                            }
+                            }.padding()
                         }
                     )
 

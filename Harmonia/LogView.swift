@@ -20,10 +20,13 @@ struct LogView: View {
     var body: some View {
         VStack {
             Text("Daily Feelings Log")
-                .font(.title)
+                .font(.custom("Mali-Bold", size: 32))
+                .foregroundColor(Color("darkOrange"))
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.leading)
-                .padding()
+                .padding(.top)
+                .padding(.top)
+                .padding(.top)
             Form {
                 Section(header: Text("Select Date")) {
                     DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
@@ -36,12 +39,13 @@ struct LogView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
             }
+            Spacer()
             Button(action: addEntry) {
                 Text("Add Entry")
-                    .font(.headline)
+                    .font(.custom("Mali-Bold", size: 22))
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color("darkOrange"))
                     .cornerRadius(8)
             }
                 List(entries) { entry in
@@ -54,10 +58,13 @@ struct LogView: View {
 
             .padding()
                 
+                
             Spacer()
             
             
         }
+        .background(Color("yellow"))
+        .ignoresSafeArea()
     }
     private func addEntry() {
         let entry = FeelingEntry(date: date, emoji: emoji)

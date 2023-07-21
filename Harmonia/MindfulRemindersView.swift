@@ -21,7 +21,7 @@ struct MindfulRemindersView: View {
     
     var body: some View {
         ZStack {
-            Color.orange
+            Color("darkOrange")
                 .ignoresSafeArea()
             VStack {
                 Text("Mindful Reminders 🤍")
@@ -37,7 +37,8 @@ struct MindfulRemindersView: View {
                                 .multilineTextAlignment(.center)
                                 .frame(maxWidth: .infinity)
                                 .padding()
-                                .background(Color.white.opacity(0.2))
+                                .background(Color("yellow")
+                            .opacity(0.2))
                                 .cornerRadius(10)
                         }
                     }
@@ -54,10 +55,10 @@ struct MindfulRemindersView: View {
                 
                 Button(action: addCustomReminder) {
                     Text("Add New Reminder")
-                        .font(.headline)
-                        .foregroundColor(.white)
+                        .font(.custom("Mali-Bold", size: 22))
+                        .foregroundColor(Color("darkOrange"))
                         .padding()
-                        .background(Color.blue)
+                        .background(Color("yellow"))
                         .cornerRadius(8)
                 }
                 .padding(.bottom)

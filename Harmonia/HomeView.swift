@@ -17,70 +17,73 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.white
+                Color("yellow")
                     .ignoresSafeArea()
                 
                 VStack {
                     Text("Welcome, \(name)!")
-                        .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color("darkOrange"))
+                        .font(.custom("Mali-Regular", size: 42))
+                        .multilineTextAlignment(.center)
                         .padding()
+                    
                     
                     Spacer()
                     
                     NavigationLink(destination: JournalView(topic: $topic, entry: $entry)) {
                         Text("Rant Journal")
-                            .font(.title)
+                            .font(.custom("Mali-Regular", size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color("darkOrange"))
                             .cornerRadius(8)
                     }
                     
                     NavigationLink(destination: MindfulRemindersView()) {
                         Text("Mindful Reminders")
-                            .font(.title)
+                            .font(.custom("Mali-Regular", size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color("darkOrange"))
                             .cornerRadius(8)
                     }
                     
                     
                     NavigationLink(destination: LogView()) {
                         Text("Feelings Log")
-                            .font(.title)
+                            .font(.custom("Mali-Regular", size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color("darkOrange"))
                             .cornerRadius(8)
                     }
                     
                     NavigationLink(destination: MeditationView()) {
                         Text("Meditation")
-                            .font(.title)
+                            .font(.custom("Mali-Regular", size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color("darkOrange"))
                             .cornerRadius(8)
                     }
                     
                     NavigationLink(destination: ResourcesView()) {
                         Text("Resources")
-                            .font(.title)
+                            .font(.custom("Mali-Regular", size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color("darkOrange"))
                             .cornerRadius(8)
                     }
                     
